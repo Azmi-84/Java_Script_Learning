@@ -1,5 +1,5 @@
-let string_Data = "Assalamualikum"
-let number_Data = 34
+// let string_Data = "Assalamualikum"
+// let number_Data = 34
 
 // let combination = string_Data + number_Data
 // let combination =  number_Data + string_Data 
@@ -15,7 +15,7 @@ let number_Data = 34
 
 // string decleration 
 
-const new_String_Data = new String('Assalamualikum, How are you?')
+// const new_String_Data = new String('Assalamualikum, How are you?')
 
 // console.log(new_String_Data);
 
@@ -61,5 +61,30 @@ const new_String_Data = new String('Assalamualikum, How are you?')
 // console.log(url_Checking_String.includes("dev"))
 // console.log(url_Checking_String.includes("Azmi"))
 
-// string to array convert
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~anchor method~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// this method do a string representing a "name" value to put into the generated <a name="..."> start tag.
 
+// The code below creates an HTML string and then replaces the document's body with it.
+
+// document.body.innerHTML = new_String_Data.anchor("anchor method");~
+
+// <a name="anchor method">Assalamualikum, How are you?</a>
+
+// this method is no longer using nowadays, cause here 'name' is no longer a valid attribute of "a" tag.~
+
+// Instead of using anchor() and creating HTML text directly, you should use DOM APIs such as document.createElement(). 
+
+// const new_String_Data = new String('Assalamualikum, How are you?');
+// const html_Element = document.createElement("a")
+
+// html_Element.innerText = new_String_Data;
+// document.body.appendChild(html_Element);
+
+
+// at method
+
+const at_Method = "Azmi-84"
+
+let index = 5;
+
+console.log(`The index ${5} returns the character `);
