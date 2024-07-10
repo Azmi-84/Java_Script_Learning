@@ -19,17 +19,17 @@
 // console.log(number_02.toPrecision(3));
 // console.log(number_03.toPrecision(3));
 
-function eArabic(a){
-    return a.toLocaleString('ar-EG');
-}
+// function eArabic(a){
+//     return a.toLocaleString('ar-EG');
+// }
 
-console.log(eArabic(123456.789));
-console.log(eArabic('123456.789'));
+// console.log(eArabic(123456.789));
+// console.log(eArabic('123456.789'));
 
-function eBangla(bangla) {
-    return bangla.toLocaleString('bn-BD');
-}
-console.log(eBangla(123456789));
+// function eBangla(bangla) {
+//     return bangla.toLocaleString('bn-BD');
+// }
+// console.log(eBangla(123456789));
 
 /*
 ar-SA Arabic (Saudi Arabia)
@@ -88,3 +88,4 @@ zh-HK Hong Kong, traditional characters
 zh-TW Taiwan, traditional characters
  */
 // https://www.w3schools.com/jsref/jsref_tolocalestring.asp
+
