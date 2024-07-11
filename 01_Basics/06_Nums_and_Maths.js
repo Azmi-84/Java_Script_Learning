@@ -89,3 +89,55 @@ zh-TW Taiwan, traditional characters
  */
 // https://www.w3schools.com/jsref/jsref_tolocalestring.asp
 
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Math Library~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// console.log(Math);
+// console.log(Math.abs(-4));
+// console.log(Math.round(2.645));
+// console.log(Math.ceil(3.2));
+// console.log(Math.floor(3.9));
+// console.log(Math.max(1,2,3,45,6,7,8));
+// console.log(Math.min(1,2,3,45,6,7,8));
+
+// console.log(Math.random());
+// console.log(Math.random()*10);
+// console.log((Math.random()*15) + 1);
+// console.log(Math.random(Math.random()*15) + 1);
+// console.log(Math.round(Math.random()*15) + 1);
+// console.log(Math.ceil(Math.random()*15) + 1);
+// console.log(Math.floor(Math.random()*15) + 1);
+
+// special formulae
+
+// function special_Formulae(max) {
+//     return ((Math.floor(Math.random() * max) + 1) + max);
+// }
+
+// console.log(special_Formulae(10)); 
+// /////////////////////////////////////////////////////////////////////////
+
+
+// function special_Formulae(min) {
+//     return ((Math.floor(Math.random() * min) + 1) + min);
+// }
+
+// console.log(special_Formulae(10)); 
+// /////////////////////////////////////////////////////////////////////////
+
+
+
+// function special_Formulae(max_1,min_1) {
+//     return ((Math.floor(Math.random() *(max_1 - min_1  + 1))) + min_1);
+// }
+
+// console.log(special_Formulae(10,5)); 
+// /////////////////////////////////////////////////////////////////////////
+
+
+
+
+// function special_Formulae(max_2,min_2) {
+//     return ((Math.floor(Math.random() *(max_2 - min_2 + 1))) + max_2);
+// }
+
+// console.log(special_Formulae(10,5)); 
