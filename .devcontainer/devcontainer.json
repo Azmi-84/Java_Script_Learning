@@ -24,9 +24,11 @@
 				"mhutchie.git-graph"
 			],
 			"settings": {
-				"editor.fontFamily": "'Ubuntu', 'Courier New', monospace",
-				"editor.fontSize": 15,
-				"terminal.integrated.fontSize": 13,
+			// "workbench.colorTheme": "Default Dark+",
+   			"editor.fontFamily": "'Fira Sans', 'Courier New', monospace",
+    		"editor.fontSize": 14,
+   			 "editor.lineHeight": 22,
+    		"editor.letterSpacing": 0.5,
 				"editor.wordWrap": "on"
 			}
 		}
