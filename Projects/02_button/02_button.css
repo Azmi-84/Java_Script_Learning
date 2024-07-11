@@ -6,7 +6,7 @@
     font-family: 'Fira', sans-serif;
 }
 body{
-    background: #111;
+    background: rgba(0, 0, 0, 1);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,10 +16,11 @@ body{
     position: relative;
     width: 400px;
     height: 400px;
-    background: rgba(12, 12, 12, 0.7);
+    background: rgba(0, 0, 0, 0.95);
     border-radius: 50%;
     border: none;
     overflow: hidden;
+    cursor: pointer;
 }
 .box::before{
     content: "";
@@ -62,6 +63,7 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .content img{
     top: 0;
     left: -10;
@@ -102,52 +104,3 @@ body{
 .box:hover .another img{
     opacity: 100;
 }
-/* .content h2{
-    
-    font-size: 1.5em;
-    text-align: center;
-    color: #fff;
-    font-weight: 600;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-}
-.content h2 span{
-    font-weight: 300;
-    font-size: 0.75em;
-}
-.content a{
-    position: relative;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: #fff;
-    color: #070a1c;
-    border-radius: 25px;
-    font-weight: 500;
-    font-size: 1.25em;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    text-decoration: none;
-    transition: 0.5s;
-}
-.content a:hover{
-    letter-spacing: 2em;
-} */
-/* button{
-    margin-top: 0px;
-    padding: 20px 20px;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 20px;
-    background-color: #e1e1e1
-}
-button:hover{
-    
-    padding: 25px 25px;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 25px;
-    transition: all 0.2s;
-}
-button img .button{
-    color: #111;
-} */
