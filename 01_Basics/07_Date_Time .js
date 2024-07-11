@@ -1,5 +1,3 @@
 // Date
-
-let my_Date = new Date()
-
-console.log(my_Date);
+const myDate = new Date(12);
+console.log(myDate);
