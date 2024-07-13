@@ -1,7 +1,10 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
 	"name": "Node.js",
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:0-18",
-	
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
@@ -12,6 +15,10 @@
 	// "postCreateCommand": "yarn install",
 
 	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "root"
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -21,15 +28,19 @@
 				"formulahendry.code-runner",
 				"ritwickdey.LiveServer",
 				"ecmel.vscode-html-css",
-				"mhutchie.git-graph"
+				"mhutchie.git-graph",
+				"dbaeumer.vscode-eslint"
 			],
 			"settings": {
 			// "workbench.colorTheme": "Default Dark+",
-   			"editor.fontFamily": "'Fira Sans', 'Courier New', monospace",
-    		"editor.fontSize": 14,
-   			 "editor.lineHeight": 22,
-    		"editor.letterSpacing": 0.5,
-				"editor.wordWrap": "on"
+   				"editor.fontFamily": "'Calibri'",
+				"editor.fontSize": 14,
+				"editor.lineHeight": 22,
+				"editor.letterSpacing": 0.1,
+				"editor.wordWrap": "on",
+				"terminal.integrated.fontFamily": "'Courier New', monospace",
+				"terminal.integrated.fontSize": 13,
+				"terminal.integrated.lineHeight": 1.2
 			}
 		}
 	},
