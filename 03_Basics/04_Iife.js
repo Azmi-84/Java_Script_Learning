@@ -4,3 +4,7 @@
 (function() {
   console.log('IIFE');
 })();
+
+( (todaysDate) => {
+    console.log(todaysDate);
+})(new Date(Date.now()).toISOString());
