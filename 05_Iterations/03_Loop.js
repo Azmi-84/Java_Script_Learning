@@ -10,5 +10,18 @@ let menu = [
 ]
 
 for (const element of menu) {
-    console.log(`Name: ${element.name}, Price: ${element.Price}, Availability: ${element.availability}, Warranty: ${element.Warranty}, Brand: ${element.Brand}, Model: ${element.Model}`);
+    // console.log(`Name: ${element.name}, Price: ${element.Price}, Availability: ${element.availability}, Warranty: ${element.Warranty}, Brand: ${element.Brand}, Model: ${element.Model}`);
 }
+
+const map = new Map();
+map.set('Calculator', '$12');
+map.set('Laptop', '$1200');
+map.set('Smartphone', '$800');
+map.set('Smartwatch', '$400');
+
+// console.log(map);
+
+for (const [key, value] of map) {
+    // console.log(`${key} is priced at ${value}`);
+}
+

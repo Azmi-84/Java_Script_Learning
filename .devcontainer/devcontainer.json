@@ -40,7 +40,7 @@
 				"editor.letterSpacing": 0.1,
 				"editor.wordWrap": "on",
 				"terminal.integrated.fontFamily": "'Courier New', monospace",
-				"terminal.integrated.fontSize": 13,
+				"terminal.integrated.fontSize": 14,
 				"terminal.integrated.lineHeight": 1.2
 			}
 		}
