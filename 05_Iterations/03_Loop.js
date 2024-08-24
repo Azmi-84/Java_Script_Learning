@@ -9,6 +9,6 @@ let menu = [
     {name:'Printer', Price: '$300', availability: 'available', Warranty: '1 Year', Brand: 'HP', Model: 'LaserJet Pro M15w'},
 ]
 
-function displayMenu() {
-    let order = []
+for (const element of menu) {
+    console.log(`Name: ${element.name}, Price: ${element.Price}, Availability: ${element.availability}, Warranty: ${element.Warranty}, Brand: ${element.Brand}, Model: ${element.Model}`);
 }

@@ -22,8 +22,6 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"esbenp.prettier-vscode",
-				"vscode-icons-team.vscode-icons",
 				"wayou.vscode-todo-highlight",
 				"formulahendry.code-runner",
 				"ritwickdey.LiveServer",
@@ -37,7 +35,7 @@
 			"settings": {
 			// "workbench.colorTheme": "Default Dark+",
    				"editor.fontFamily": "'Calibri'",
-				"editor.fontSize": 14,
+				"editor.fontSize": 16,
 				"editor.lineHeight": 22,
 				"editor.letterSpacing": 0.1,
 				"editor.wordWrap": "on",
