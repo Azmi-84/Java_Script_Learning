@@ -20,7 +20,7 @@ const shoppingCart = [
 
 console.log(
     shoppingCart.reduce( (acc, curr) => (acc + (curr.price * curr.quantity)),0  )
-);
+)
 
 
 
