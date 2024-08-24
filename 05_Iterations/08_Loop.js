@@ -22,5 +22,8 @@ console.log(
     shoppingCart.reduce( (acc, curr) => (acc + (curr.price * curr.quantity)),0  )
 );
 
+// git config user.name my-name
+// git config user.email my-email
+
 
 
