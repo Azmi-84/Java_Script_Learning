@@ -54,14 +54,37 @@
         document.querySelector(".language").appendChild(li);
     }
 
-    addLanguage("GO Lang");
-    addLanguage("azmi-84");
-    addLanguage("TypeScript");
-    addLanguage("python");
+// Array of languages
+const languages = [
+    { name: "PHP", type: "opt" },
+    { name: "C++", type: "normal" },
+    { name: "Java", type: "opt" },
+    { name: "JavaScript", type: "normal" },
+    { name: "C#", type: "normal" },
+    { name: "Ruby", type: "opt" },
+    { name: "Swift", type: "normal" },
+    { name: "Rust", type: "opt" },
+    { name: "Kotlin", type: "normal" },
+    { name: "Dart", type: "opt" },
+    { name: "Scala", type: "normal" },
+    { name: "Perl", type: "opt" },
+    { name: "Haskell", type: "normal" },
+    { name: "Erlang", type: "opt" },
+    { name: "Clojure", type: "normal" },
+    { name: "Groovy", type: "opt" },
+    { name: "Lua", type: "normal" },
+    {name: "CSS", type: "normal"},
+    {name: "HTML", type: "normal"},
+    {name: "Python", type: "normal"},
+];
 
-    addOptLanguage("PHP");
-    addLanguage("C++");
-    addOptLanguage("Java");
+languages.forEach(lang => {
+    if (lang.type === "opt") {
+        addOptLanguage(lang.name);
+    } else {
+        addLanguage(lang.name);
+    }
+});
 
     // Editing
     const secondChild = document.querySelector("li:nth-child(2)");
