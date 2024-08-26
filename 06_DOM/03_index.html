@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>| DOM | Welcome to our DOM Learning</title>
+    <style>
+        body {
+            background-color: black;
+            color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            height: fit-content;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <ul class="language">
+    </ul>
+</body>
+<script>
+    
+    function applyStyles(li) {
+        li.style.backgroundColor = "orange";
+        li.style.padding = "3px";
+        li.style.borderRadius = "4px";
+        li.style.color = "#212121";
+        li.style.fontWeight = "bold";
+        li.style.margin = "4px";
+        li.style.alignItems = "center";
+        li.style.justifyContent = "center";
+        li.style.display = "flex";
+        li.id = Math.round(Math.random() * 1000 + 1);
+        li.title = (Math.random() + 1).toString(36).substring(7);
+    }
+
+    function addLanguage(langName) {
+        const li = document.createElement("li");
+        li.textContent = langName;
+        applyStyles(li);
+        console.log(li);
+        document.querySelector(".language").appendChild(li);
+    }
+
+    function addOptLanguage(langName) {
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName));
+        applyStyles(li);
+        console.log(li);
+        document.querySelector(".language").appendChild(li);
+    }
+
+    addLanguage("GO Lang");
+    addLanguage("azmi-84");
+    addLanguage("TypeScript");
+    addLanguage("python");
+
+    addOptLanguage("PHP");
+    addLanguage("C++");
+    addOptLanguage("Java");
+
+    // Editing
+    const secondChild = document.querySelector("li:nth-child(2)");
+    console.log(secondChild.innerText);
+
+    function newList(langName) {
+        const newLang = document.createElement("li");
+        newLang.textContent = langName;
+        applyStyles(newLang); 
+        console.log(newLang);
+        secondChild.replaceWith(newLang);
+    }
+
+    newList("mySql");
+
+    //  Removing and Replacing
+    function removeAndReplaceFirstChild(langName) {
+    const firstChild = document.querySelector("li:first-child");
+    
+    if (firstChild) {
+        const newLang = document.createElement("li");
+        newLang.textContent = langName;
+        applyStyles(newLang); 
+        firstChild.replaceWith(newLang);
+        console.log(newLang);
+    } else {
+        console.log("No first child found to replace.");
+    }
+}
+
+removeAndReplaceFirstChild("CSS");
+
+</script>
+</html>
